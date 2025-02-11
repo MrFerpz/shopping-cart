@@ -1,5 +1,35 @@
 .heroBannerContainer {
     height: 400px;
-    background-color:rgb(57, 58, 58);
     width: 100vw;
+    background-color: #EFE2BA;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.verticalContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button {
+    width: 30%;
+    color: black;
+    background-color: #D79922;
+}
+
+a {
+    color: black;
+}
+
+h1, h2 {
+    margin: 0px;
+    padding: 10px;
+    color: #4056A1;
+}
+
+.yoghurtPic {
+    object-fit: cover;
+    max-height: 400px;
 }
