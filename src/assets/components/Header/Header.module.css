@@ -1,0 +1,27 @@
+.header {
+    height: 80px;
+    background-color: rgb(1, 1, 1);
+    width: 100vw;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.navItem {
+    color: white;
+    font-weight: bold;
+}
+
+.shopLink {
+    margin-right: 100px;
+}
