@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import HomePage from "./assets/pages/HomePage"
 import './App.css'
 
 // Components list
@@ -8,8 +9,7 @@ import './App.css'
 function App() {
 
   return (
-    <>
-    </>
+    <HomePage/>
   )
 }
 

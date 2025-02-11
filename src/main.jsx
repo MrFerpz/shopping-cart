@@ -5,7 +5,7 @@ import routes from "./routes";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from './App.jsx'
 
-const routes = createBrowserRouter(routes);
+const router = createBrowserRouter(routes);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

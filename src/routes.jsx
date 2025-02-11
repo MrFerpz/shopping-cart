@@ -5,7 +5,7 @@ import ShopPage from "./assets/pages/ShopPage"
 const routes = [
     {
         path: "/",
-        element: <HomePage/>
+        element: <App/>
     },
     {
         path: "shop",

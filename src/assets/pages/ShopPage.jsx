@@ -1,6 +1,11 @@
+import { Link } from 'react-router-dom';
+
 function ShopPage() {
     return (
-        <>Shop Page</>
+        <div>
+            <>Shop Page</><br></br>
+            <Link to="/">Home</Link>
+        </div>
     )
 }
 
