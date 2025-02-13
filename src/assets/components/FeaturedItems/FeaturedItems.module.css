@@ -10,3 +10,9 @@
     grid-template-columns: 1fr repeat(4, 1fr) 1fr;
     column-gap: 10px;
 }
+
+.title {
+    font-size: 2rem;
+    padding: 15px;
+    color: rgb(80, 80, 80);
+}

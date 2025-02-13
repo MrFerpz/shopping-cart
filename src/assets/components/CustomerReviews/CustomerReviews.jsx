@@ -1,6 +1,10 @@
+import styles from "./CustomerReviews.module.css"
+
 function CustomerReviews() {
     return (
-        <div></div>
+        <section className={styles.reviewsContainer}>
+            <div></div>
+        </section>
     )
 }
 

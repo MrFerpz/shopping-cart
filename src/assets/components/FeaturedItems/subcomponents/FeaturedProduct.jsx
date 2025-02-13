@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import styles from "./FeaturedProduct.module.css";
 import QuantityBar from "./QuantityBar";
+import { Link } from "react-router-dom";
+import { FaShoppingCart } from "react-icons/fa";
 
 function FeaturedProduct({productID}) {
     // for the child component "QuantityBar"
@@ -41,12 +43,17 @@ function FeaturedProduct({productID}) {
 
     return (
         <div className={styles.featuredCard}>
+            <div className={styles.imageWrapper}>
+                <img className={styles.heroImage} src={productData.image} alt={productData.title}></img>
+            </div>
             <h4 className={styles.featuredCardTitle}><b>{productData.title}</b></h4>
-            <img className={styles.heroImage} src={productData.image} alt={productData.title}></img>
             <div className={styles.featuredDescription}>{productData.description}</div>
             <QuantityBar id={productID} onChange={changeQuantity}/>
-            <div>Price: {productData.price}</div>
-            <div>Total Price: {productData.price * quantity}</div>
+            <div className={styles.priceGrid}>
+                <div className={styles.price}>${Math.round(productData.price * 100)/100} each</div>
+                <div className={styles.totalPrice}>${Math.round(productData.price * quantity * 100)/100} total</div>
+                <button className={styles.goToCart}><Link to="shop"><FaShoppingCart/></Link></button>
+            </div>
         </div>
     )
 }

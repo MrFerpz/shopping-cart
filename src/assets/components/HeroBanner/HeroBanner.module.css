@@ -1,5 +1,5 @@
 .bannerContainer {
-    height: 400px;
+    height: 250px;
     width: 100vw;
     background-color: #dfdfdf;
     display: grid;
@@ -9,14 +9,19 @@
 .verticalContainer {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content:center;
     align-items: center;
 }
 
 button {
-    width: 30%;
+    width: 100px;
     color: black;
     background-color: #3f91c4;
+    box-shadow: 1px 1px;
+}
+
+button:hover {
+    opacity: 80%;
 }
 
 a {
@@ -32,5 +37,5 @@ h1, h2 {
 .clothesPic {
     align-self: center;
     object-fit: cover;
-    max-height: 300px;
+    max-height: 200px;
 }

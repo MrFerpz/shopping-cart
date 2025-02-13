@@ -1,22 +1,21 @@
 .featuredCard {
-    border: solid rgb(80, 80, 80) 2px;
-    border-radius: 2px;
-    height: 240px;
+    border-radius: 5px;
+    height: 250px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     overflow: hidden;
     object-fit: contain;
-    padding: 10px;
     margin: 2px;
     background-color: white;
     align-items: center;
     justify-content: center;
+    box-shadow: 1px 1px 5px rgb(213, 213, 213);
 }
 
 .featuredCardTitle {
     height: 1rem;
     overflow: hidden;
-    margin-bottom: 10px;
+    margin: 2px;
 }
 
 div {
@@ -28,16 +27,51 @@ h4 {
     margin: 0px;
 }
 
+.imageWrapper {
+    height: 100px;
+    overflow: hidden;
+}
+
 .heroImage {
     align-self: center;
     object-fit: contain;
-    width: auto;
-    height: 100px;
+    width: 100%;
     margin: 0 auto;
 }
 
 .featuredDescription {
     overflow: auto;
-    height: 2.9rem;
-    margin: 5px 0px 5px 0px;
+    height: 1.5rem;
+    padding: 4px;
+}
+
+.price, .totalPrice {
+    text-align: right;
+    grid-column: 1;
+}
+
+.priceGrid {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: 1rem 1rem;
+    margin-bottom: 5px;
+}
+
+.goToCart {
+    display: flex;
+    grid-row: 1 / 3;
+    grid-column: 2;
+    width: 45%;
+    height: 80%;
+    background-color: rgb(109, 196, 109);
+    justify-self: center;
+}
+
+svg {
+    position:relative;
+    top: -2px;
+}
+
+.goToCart svg {
+    justify-self: center;
 }

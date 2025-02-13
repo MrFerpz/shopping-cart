@@ -17,7 +17,7 @@ function QuantityBar( {onChange} ) {
                     </div>
                 </div>
         ) : (
-            <button className={styles.addToCartButton} onClick={handleClick}>Add to cart</button>
+            <button className={styles.addToCartButton} onClick={handleClick}><b>ADD TO CART</b></button>
         )
         }
     </div>

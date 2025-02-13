@@ -4,7 +4,7 @@ import FeaturedProduct from "./subcomponents/FeaturedProduct";
 function FeaturedItems() {
     return (
         <section className = {styles.featuredSection}>
-            <h1>Featured Items</h1>
+            <h2 className = {styles.title}>Featured Items</h2>
             <div className = {styles.featuredGrid}>
                 <div></div>
                 <FeaturedProduct className = {styles.featuredCard} productID="1"/>
