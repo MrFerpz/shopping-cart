@@ -1,0 +1,33 @@
+.featuredCard {
+    border: solid black 1px;
+    height: 200px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+    object-fit: contain;
+    padding: 10px;
+    margin: 2px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+div {
+    font-size: 0.6rem;
+}
+
+h4 {
+    font-size: 0.7rem;
+    margin: 0px;
+}
+
+img {
+    object-fit:contain;
+    align-self: center;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.heroImage {
+    align-self: center;
+}

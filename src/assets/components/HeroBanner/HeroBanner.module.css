@@ -1,7 +1,7 @@
 .bannerContainer {
     height: 400px;
     width: 100vw;
-    background-color: #EFE2BA;
+    background-color: #dfdfdf;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -16,7 +16,7 @@
 button {
     width: 30%;
     color: black;
-    background-color: #D79922;
+    background-color: #3f91c4;
 }
 
 a {
@@ -26,10 +26,10 @@ a {
 h1, h2 {
     margin: 0px;
     padding: 10px;
-    color: #4056A1;
+    color: #000000;
 }
 
-.yoghurtPic {
+.clothesPic {
     object-fit: cover;
     max-height: 400px;
 }

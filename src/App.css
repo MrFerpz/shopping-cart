@@ -2,3 +2,7 @@
   text-align: center;
   background-color: #272727;
 }
+
+p, div {
+  color: black;
+}
