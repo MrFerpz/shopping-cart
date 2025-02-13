@@ -30,6 +30,7 @@ h1, h2 {
 }
 
 .clothesPic {
+    align-self: center;
     object-fit: cover;
-    max-height: 400px;
+    max-height: 300px;
 }

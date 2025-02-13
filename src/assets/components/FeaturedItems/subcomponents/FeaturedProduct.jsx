@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import styles from "./FeaturedProduct.module.css";
+import QuantityBar from "./QuantityBar";
 
 function FeaturedProduct({productID}) {
     const [productData, setProductData] = useState(null);
@@ -31,14 +32,9 @@ function FeaturedProduct({productID}) {
 
     return (
         <div className={styles.featuredCard}>
-            <h4><b>{productData.title}</b></h4>
-            <img src={productData.image} alt={productData.title} className="heroImage"></img>
-            <div className="quantityBar">
-                <span>Quantity: </span>
-                <button> - </button>
-                <input></input>
-                <button> + </button>
-            </div>
+            <h4 className={styles.featuredCardTitle}><b>{productData.title}</b></h4>
+            <img className={styles.heroImage} src={productData.image} alt={productData.title}></img>
+            <QuantityBar/>
         </div>
     )
 }
