@@ -15,6 +15,10 @@
     background-color: #dfdfdf;
 }
 
+.verticalContainer h1 {
+    font-size: 2.5rem;
+}
+
 button {
     width: 100px;
     color: black;

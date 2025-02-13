@@ -1,0 +1,21 @@
+.footer {
+    height: 200px;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 100px;
+    color: white;
+}
+
+.footerContainer div, .footerContainer div a, .footerContainer h3 {
+    color: white;
+}
+
+.footerContainer div a {
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.footerContainer h3 {
+    font-size: 1.1rem;
+}

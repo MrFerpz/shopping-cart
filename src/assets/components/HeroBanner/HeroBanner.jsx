@@ -6,7 +6,7 @@ function HeroBanner() {
     return (
         <section>
             <div className={styles.verticalContainer}>
-                <h1>FY Clothes & Accessories</h1>
+                <h1>FY ACCESSORIES</h1>
                 <h2>You want it? We got it!</h2>
             </div>
         </section>
