@@ -1,0 +1,19 @@
+.featuredSection {
+    background-color: white;
+    height: 400px;
+    width: 100%;
+}
+
+.featuredGrid {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 1fr repeat(4, 1fr) 1fr;
+    column-gap: 10px;
+}
+
+.featuredCard {
+    height: 200px;
+    width: 150px;
+    border: 1px solid black;
+    justify-self: center;
+}

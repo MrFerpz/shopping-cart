@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function HeroBanner() {
     return (
-        <section className={styles.heroBannerContainer}>
+        <section className={styles.bannerContainer}>
             <div className={styles.verticalContainer}>
                 <h1>Yoghurt directly to your doorstep...</h1>
                 <h2>Get your mitts on these yogs ASAP!</h2>
