@@ -12,6 +12,10 @@
     box-shadow: 1px 1px 5px rgb(213, 213, 213);
 }
 
+.heroImage:hover {
+    cursor:pointer;
+}
+
 .featuredCardTitle {
     height: 1rem;
     overflow: hidden;

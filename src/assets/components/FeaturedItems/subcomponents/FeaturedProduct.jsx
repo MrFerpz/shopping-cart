@@ -51,7 +51,7 @@ function FeaturedProduct({productID}) {
             <QuantityBar id={productID} onChange={changeQuantity}/>
             <div className={styles.priceGrid}>
                 <div className={styles.price}>${Math.round(productData.price * 100)/100} each</div>
-                <div className={styles.totalPrice}>${Math.round(productData.price * quantity * 100)/100} total</div>
+                <div className={styles.totalPrice}>${Math.round(productData.price * quantity * 100/100)} total</div>
                 <button className={styles.goToCart}><Link to="shop"><FaShoppingCart/></Link></button>
             </div>
         </div>

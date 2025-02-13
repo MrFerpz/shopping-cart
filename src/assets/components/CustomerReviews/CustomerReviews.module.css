@@ -2,3 +2,29 @@
     height: 250px;
     background-color: #dfdfdf;
 }
+
+h1 {
+    font-size: 1.5rem;
+    padding: 15px;
+    color: rgb(80, 80, 80);
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.customerCard {
+    height: 100px;
+    width: 300px;
+    background-color: white;
+    box-shadow: 2px 2px rgb(209, 208, 208);
+    border-radius: 10px;
+    padding: 20px;
+    font-size: medium;
+}
+
+.emptySeparator {
+    height: 10px;
+}

@@ -11,13 +11,14 @@
     flex-direction: column;
     justify-content:center;
     align-items: center;
+    height: 200px;
+    background-color: #dfdfdf;
 }
 
 button {
     width: 100px;
     color: black;
     background-color: #3f91c4;
-    box-shadow: 1px 1px;
 }
 
 button:hover {
