@@ -1,16 +1,11 @@
 import { useState } from "react";
+import styles from "./QuantityBar.module.css"
 
-function QuantityBar() {
+function QuantityBar( {onChange} ) {
     const [wasClicked, setWasClicked] = useState(false);
-    const [quantity, setQuantity] = useState(0);
 
     function handleClick(e) {
         setWasClicked(true)
-    }
-
-    function changeQuantity(e) {
-        let updatedQuantity = e.target.value;
-        setQuantity(updatedQuantity);
     }
 
    return (
@@ -18,11 +13,11 @@ function QuantityBar() {
         {wasClicked ? (
                 <div>
                     <div>
-                        <input type="number" onChange={changeQuantity}></input>
+                        <input type="number" min="0" defaultValue="0" onChange={onChange}></input>
                     </div>
                 </div>
         ) : (
-            <button onClick={handleClick}>Add to cart</button>
+            <button className={styles.addToCartButton} onClick={handleClick}>Add to cart</button>
         )
         }
     </div>

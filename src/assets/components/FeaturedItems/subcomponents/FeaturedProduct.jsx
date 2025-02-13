@@ -3,6 +3,10 @@ import styles from "./FeaturedProduct.module.css";
 import QuantityBar from "./QuantityBar";
 
 function FeaturedProduct({productID}) {
+    // for the child component "QuantityBar"
+    const [quantity, setQuantity] = useState(0);
+    
+    // for the data fetching
     const [productData, setProductData] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -30,11 +34,19 @@ function FeaturedProduct({productID}) {
     if (loading) return <div>Loading...</div>;
     if (error) return <div>A network error was encountered.</div>
 
+    function changeQuantity(e) {
+        let updatedQuantity = parseInt(e.target.value) || 0
+        setQuantity(updatedQuantity);
+    }
+
     return (
         <div className={styles.featuredCard}>
             <h4 className={styles.featuredCardTitle}><b>{productData.title}</b></h4>
             <img className={styles.heroImage} src={productData.image} alt={productData.title}></img>
-            <QuantityBar/>
+            <div className={styles.featuredDescription}>{productData.description}</div>
+            <QuantityBar id={productID} onChange={changeQuantity}/>
+            <div>Price: {productData.price}</div>
+            <div>Total Price: {productData.price * quantity}</div>
         </div>
     )
 }
