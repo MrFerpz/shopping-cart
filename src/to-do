@@ -1,0 +1,15 @@
+> Improve routing mechanic in App.jsx
+Give it 25 minutes, then either check solution or
+let ShopPage manually import Header and Footer
+
+> Import ProductCards into ShopPage and display a grid of them
+
+> Add hover and click animations
+
+> Add a "your basket" page
+
+> Add an interactive icon in the top right signifying your basket
+
+> Make design improvements
+
+> Done!

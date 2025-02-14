@@ -1,5 +1,6 @@
-import { useState } from 'react'
+import { Route, Routes } from "react-router-dom";
 import HomePage from "./assets/pages/HomePage"
+import ShopPage from "./assets/pages/ShopPage/ShopPage"
 import Header from "./assets/components/Header/Header"
 import Footer from "./assets/components/Footer/Footer"
 import './App.css'
@@ -13,7 +14,10 @@ function App() {
   return (
     <div>
       <Header/>
-      <HomePage/>
+      <Routes>
+        <Route path="/" element={<HomePage/>}/>
+        <Route path="shop" element={<ShopPage/>}/>
+      </Routes>
       <Footer/>
     </div>
   )

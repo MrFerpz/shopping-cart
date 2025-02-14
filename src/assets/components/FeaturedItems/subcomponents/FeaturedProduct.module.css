@@ -12,6 +12,10 @@
     box-shadow: 1px 1px 5px rgb(213, 213, 213);
 }
 
+.featuredCard:hover {
+    transform: scale(1.02);
+}
+
 .heroImage:hover {
     cursor:pointer;
 }

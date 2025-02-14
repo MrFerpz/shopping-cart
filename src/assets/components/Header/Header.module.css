@@ -7,6 +7,12 @@
     justify-content: flex-end;
     position: sticky;
     top: 0;
+    z-index: 1;
+}
+
+li svg {
+    color: white;
+    margin-right: 20px;
 }
 
 nav ul {
@@ -23,5 +29,5 @@ nav ul {
 }
 
 .shopLink {
-    margin-right: 100px;
+    margin-right: 10px
 }

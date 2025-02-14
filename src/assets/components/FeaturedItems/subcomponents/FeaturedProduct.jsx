@@ -4,7 +4,7 @@ import QuantityBar from "./QuantityBar";
 import { Link } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
 
-function FeaturedProduct({productID}) {
+function FeaturedProduct({productID, className}) {
     // for the child component "QuantityBar"
     const [quantity, setQuantity] = useState(0);
     
