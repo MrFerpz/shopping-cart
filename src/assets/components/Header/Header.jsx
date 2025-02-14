@@ -10,7 +10,7 @@ function Header() {
                 <ul>
                     <li><Link to="/" className={styles.navItem} id="home-link">HOME</Link></li>
                     <li><Link to="shop" className={classNames(styles.navItem, styles.shopLink)}>SHOP</Link></li>
-                    <li><FaShoppingCart size={32}/></li>
+                    <li><Link to="basket"><FaShoppingCart size={32}/></Link></li>
                 </ul>
             </nav>
         </div>
